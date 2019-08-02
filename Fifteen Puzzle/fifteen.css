@@ -1,0 +1,49 @@
+/*
+Name: Zachary Hsiao
+Date: 4-25-18
+Section: CSE 154 AJ
+
+Style page for the fifteen puzzle page.
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+
+body {
+	font-family: 'Bubblegum Sans', cursive;
+	text-align: center;
+	font-size: 14pt;
+	cursor: default;
+}
+
+
+main > * {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	width: 80%;
+}
+
+#puzzle-area {
+	position: relative;
+	height: 400px;
+	width: 400px;
+}
+
+.pieces {
+	position: absolute;
+	background-image: url("background.jpg");
+	border: 5px solid black;
+	height: 90px;
+	width: 90px;
+	font-size: 40pt;
+	vertical-align: middle;
+	line-height: 90px;
+}
+
+.movable:hover {
+	color: red;
+	border-color: red;
+	cursor: pointer;
+}
